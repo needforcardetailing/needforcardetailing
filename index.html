@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - NFCD</title>
+  <meta name="description" content="Need For Car Detailing — professionele autodetailing. Basic, Refresh en Diamond pakketten." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ══ NAVIGATIE ══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">NEEDFOR<span>CAR</span>DETAILING</a>
+
+    <!-- Desktop links -->
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pakketten.html">Pakketten</a></li>
+      <li><a href="contact.html" class="nav__cta">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button class="nav__toggle" id="navToggle" aria-label="Menu openen/sluiten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Backdrop -->
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- Side drawer -->
+  <nav class="nav__drawer" id="navDrawer" aria-label="Mobiel menu">
+    <a href="index.html" class="nav__drawer-link active">
+      Home
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="pakketten.html" class="nav__drawer-link">
+      Pakketten
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="contact.html" class="nav__drawer-link">
+      Contact
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+    <div class="nav__drawer-info">
+      <div class="nav__drawer-info-label">E-mail</div>
+      <a href="mailto:info@needforcardetailing.be">needforcardetailing@gmail.com</a>
+   
+    </div>
+
+    <div class="nav__drawer-social">
+      <a href="https://www.instagram.com/needforcardetailing/" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@needforcardetailing?lang=nl-NL" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══ MAIN ════════════════════════════════════════════════ -->
+  <main class="page-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <div class="hero__badge" data-animate><span></span>Professionele Auto Detailing</div>
+        <h1 class="hero__title" data-animate data-delay="1">UW<br /><em>VOERTUIG VERDIEND</em><br />Het Beste</h1>
+        <p class="hero__sub" data-animate data-delay="2">Van dagelijkse reiniging tot volledige showroom-perfectie. Elk voertuig behandeld met ongekende precisie.</p>
+        <div class="hero__actions" data-animate data-delay="3">
+          <a href="pakketten.html" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Bekijk pakketten
+          </a>
+          <a href="contact.html" class="btn btn--outline">Offerte aanvragen</a>
+        </div>
+      </div>
+      <div class="hero__scroll"><span>Scroll</span><div class="hero__scroll-line"></div></div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stats-bar__inner">
+        <div data-animate><div class="stat__number">25+</div><div class="stat__label">Tevreden klanten</div></div>
+        <div data-animate data-delay="1"><div class="stat__number">3</div><div class="stat__label">Pakketten</div></div>
+        <div data-animate data-delay="2"><div class="stat__number">100%</div><div class="stat__label">Kwaliteitsgarantie</div></div>
+        <div data-animate data-delay="3"><div class="stat__number">5★</div><div class="stat__label">Beoordeling</div></div>
+      </div>
+    </div>
+
+    <!-- OVER ONS -->
+    <section class="section">
+      <div class="about-strip container">
+        <div class="about-strip__visual" data-animate>
+          <img src="images/jaguar.png" alt="Detailing professional" class="about-strip__img" />
+          <div class="about-strip__tag">EST. 2025</div>
+        </div>
+        <div class="about-strip__text" data-animate data-delay="2">
+          <span class="label">Over ons</span>
+          <h2 class="h-section">Passie voor<br />perfectie</h2>
+          <div class="divider"></div>
+          <p>Bij NeedForCarDetailing geloven we dat uw wagen meer verdient dan een gewone wasbeurt. Elk voertuig dat onze handen passeert krijgt de allerhoogste zorg.</p>
+          <p>Wij gebruiken uitsluitend premium producten van topmerken. Van een grondige reiniging tot een volledige diamond-behandeling.</p>
+          <a href="pakketten.html" class="btn btn--outline" style="margin-top:0.5rem">
+            Ontdek onze pakketten
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIENSTEN PREVIEW -->
+    <section class="section services-preview">
+      <div class="container">
+        <span class="label" data-animate>Onze diensten</span>
+        <h2 class="h-section" data-animate data-delay="1">Drie pakketten,<br />één missie</h2>
+      </div>
+      <div class="services-preview__grid">
+        <article class="service-card" data-animate>
+          <div class="service-card__num">01</div>
+          <h3 class="service-card__title">Basic</h3>
+          <p class="service-card__desc">Essentiële reiniging en bescherming voor de dagelijkse rijder. Snel, grondig en betaalbaar.</p>
+          <a href="pakketten.html#basic" class="service-card__link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </article>
+        <article class="service-card" data-animate data-delay="1">
+          <div class="service-card__num">02</div>
+          <h3 class="service-card__title">Refresh</h3>
+          <p class="service-card__desc">Diepgaande reiniging binnen en buiten. Geeft uw wagen een nieuw leven en frisse uitstraling.</p>
+          <a href="pakketten.html#refresh" class="service-card__link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </article>
+        <article class="service-card" data-animate data-delay="2">
+          <div class="service-card__num">03</div>
+          <h3 class="service-card__title">Diamond</h3>
+          <p class="service-card__desc">Het ultieme detailing-pakket. Volledig deepcleaning van het interieur en exterieur langdurige bescherming.</p>
+          <a href="pakketten.html#diamond" class="service-card__link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOTO GALERIJ -->
+    <section class="section gallery">
+      <div class="gallery__header" data-animate>
+        <span class="label">Onze resultaten</span>
+        <h2 class="h-section">Foto Galerij</h2>
+        <p class="h-serif">Elk detail telt — ontdek ons werk.</p>
+      </div>
+
+      <!-- 4-kolomsgrid met grote + kleine tegels -->
+      <div class="gallery__grid">
+
+        <!-- Grote featured tegel links boven -->
+        <div class="gallery__item gallery__item--large" data-animate>
+          <img src="images/cklassestuur.png" alt="Alcantara resultaat" />
+          <div class="gallery__item-overlay"><span class="gallery__item-caption">Alcantara reiniging</span></div>
+        </div>
+
+        <!-- Kleine tegels rechts van large -->
+        <div class="gallery__item" data-animate data-delay="1">
+          <img src="images/aklassecoating.png" alt="Coating behandeling" />
+          <div class="gallery__item-overlay"><span class="gallery__item-caption">Coating result</span></div>
+        </div>
+        <div class="gallery__item" data-animate data-delay="2">
+          <img src="images/glastoel1.png" alt="Leder correction" />
+          <div class="gallery__item-overlay"><span class="gallery__item-caption">Leder reiniging</span></div>
+        </div>
+
+        <!-- Rij 2 -->
+        <div class="gallery__item gallery__item--wide" data-animate>
+          <img src="images/eqakoffer.png" alt="Interieur reiniging" />
+          <div class="gallery__item-overlay"><span class="gallery__item-caption">Interieur reiniging</span></div>
+        </div>
+        <div class="gallery__item" data-animate data-delay="1">
+          <img src="images/truckstuur.png" alt="Camions" />
+          <div class="gallery__item-overlay"><span class="gallery__item-caption">Camion reiniging</span></div>
+        </div>
+        <div class="gallery__item" data-animate data-delay="2">
+          <img src="images/motorkapafter.png" alt="Wax behandeling" />
+          <div class="gallery__item-overlay"><span class="gallery__item-caption">Motorruimte reiniging</span></div>
+        </div>
+
+        <!-- Rij 3 — placeholder slots voor eigen foto's -->
+        <div class="gallery__item" data-animate>
+          <div class="gallery__placeholder">
+             <img src="images/jaguarvelgext.png" alt="Velg POV" />
+            <div class="gallery__item-overlay"><span class="gallery__item-caption">Exterieur reiniging</span></div>
+            </div>
+        </div>
+        <div class="gallery__item" data-animate data-delay="1">
+          <div class="gallery__placeholder">
+              <img src="images/oldtimer.png" alt="Oldtimers" />
+              <div class="gallery__item-overlay"><span class="gallery__item-caption">Oldtimers</span></div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WERKWIJZE -->
+    <section class="section" style="background: var(--off-black);">
+      <div class="container">
+        <span class="label" data-animate>Onze aanpak</span>
+        <h2 class="h-section" data-animate data-delay="1">Hoe we<br />te werk gaan</h2>
+        <div class="process__steps">
+          <div class="process__step" data-animate><div class="process__step-title">Inspectie</div><p class="process__step-desc">We beoordelen zorgvuldig de staat van uw voertuig en bespreken uw wensen.</p></div>
+          <div class="process__step" data-animate data-delay="1"><div class="process__step-title">Voorbereiding</div><p class="process__step-desc">Decontaminatie en veilig verwijderen van vuil, teer en insectenresten.</p></div>
+          <div class="process__step" data-animate data-delay="2"><div class="process__step-title">Behandeling</div><p class="process__step-desc">Diepgaande reiniging, polijsten en bescherming op maat van het pakket.</p></div>
+          <div class="process__step" data-animate data-delay="3"><div class="process__step-title">Aflevering</div><p class="process__step-desc">Eindinspectie, finishing touches en tevreden aflevering aan u.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-banner__bg"></div>
+      <div class="cta-banner__inner" data-animate>
+        <h2 class="cta-banner__title">Klaar voor de trans&shy;formatie?</h2>
+        <p class="cta-banner__sub">Vraag vandaag nog een vrijblijvende offerte aan.</p>
+        <a href="contact.html" class="btn btn--accent">
+          Neem contact op
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">NEEDFOR<span>CAR</span>DETAILING</div>
+        <div class="footer__tagline">Premium Auto Detailing</div>
+        <p class="footer__desc">Professionele autodetailing met oog voor elk detail. Uw wagen, onze passie.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigatie</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pakketten.html">Pakketten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Pakketten</div>
+        <ul class="footer__links">
+          <li><a href="pakketten.html#basic">Basic</a></li>
+          <li><a href="pakketten.html#refresh">Refresh</a></li>
+          <li><a href="pakketten.html#diamond">Diamond</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 NeedForCarDetailing. Alle rechten voorbehouden.</span>
+      <span>Gemaakt met precisie &amp; passie</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Drawer navigation ──────────────────────────────────
+    const toggle  = document.getElementById('navToggle');
+    const drawer  = document.getElementById('navDrawer');
+    const overlay = document.getElementById('navOverlay');
+
+    function openMenu() {
+      toggle.classList.add('open');
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+      document.body.classList.add('nav-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+    function closeMenu() {
+      toggle.classList.remove('open');
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', () => drawer.classList.contains('open') ? closeMenu() : openMenu());
+    overlay.addEventListener('click', closeMenu);
+
+    // Close on Escape
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // Close when a drawer link is clicked (mobile navigation)
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+    // ── Scroll animations ──────────────────────────────────
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

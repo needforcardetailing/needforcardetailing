@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - NFCD</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ══ NAVIGATIE ══ -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">NEEDFOR<span>CAR</span>DETAILING</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pakketten.html">Pakketten</a></li>
+      <li><a href="contact.html" class="active nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav__overlay" id="navOverlay"></div>
+  <nav class="nav__drawer" id="navDrawer" aria-label="Mobiel menu">
+    <a href="index.html" class="nav__drawer-link">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="pakketten.html" class="nav__drawer-link">Pakketten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="contact.html" class="nav__drawer-link active">Contact <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="nav__drawer-info">
+      <div class="nav__drawer-info-label">E-mail</div>
+      <a href="mailto:info@needforcardetailing.be">needforcardetailing@gmail.com</a>
+      <div class="nav__drawer-info-label">Openingsuren</div>
+      <p>Maandag – Zondag<br/>8:00 – 20:00</p>
+    </div>
+    <div class="nav__drawer-social">
+      <a href="https://www.instagram.com/needforcardetailing/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.tiktok.com/@needforcardetailing?lang=nl-NL" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg></a>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <span class="label" data-animate>Bereikbaarheid</span>
+      <h1 class="h-display" data-animate data-delay="1">Contact</h1>
+      <p class="h-serif" data-animate data-delay="2">Boek uw afspraak of stel uw vraag — wij antwoorden binnen 24 uur.</p>
+    </div>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="section" style="padding-top:0">
+      <div class="contact-layout container">
+
+        <!-- Info kolom -->
+        <div data-animate>
+          <div class="contact-info__item">
+            <div class="contact-info__label">E-mail</div>
+            <div class="contact-info__value">
+              <a href="mailto:info@needforcardetailing.be" style="color:inherit">needforcardetailing@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__label">Adres</div>
+            <div class="contact-info__value">Mechelen, België</div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__label">Openingsuren</div>
+            <div class="contact-info__value" style="font-size:0.95rem;line-height:2">
+              Maandag – Zondag<br/>
+              8:00 – 20:00
+            </div>
+          </div>
+
+          <div class="contact-info__social">
+            <a href="https://www.instagram.com/needforcardetailing/" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@needforcardetailing?lang=nl-NL" class="social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulier -->
+        <div data-animate data-delay="2">
+          <span class="label">Stuur een bericht</span>
+          <h2 class="h-section" style="margin-bottom:2rem">Afspraak<br />aanvragen</h2>
+
+          <div id="formSuccess" class="form-success">
+            ✓ Uw bericht werd verstuurd — we nemen spoedig contact met u op.
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="naam">Naam *</label>
+                <input type="text" id="naam" name="naam" placeholder="Jan Janssen" required />
+              </div>
+              <div class="form-group">
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="+32 4xx xx xx xx" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="uw@email.be" required />
+            </div>
+
+            <div class="form-group">
+              <label for="pakket">Gewenst pakket</label>
+              <select id="pakket" name="pakket">
+                <option value="" disabled selected>Kies een pakket…</option>
+                <option value="basic">Basic</option>
+                <option value="refresh">Refresh</option>
+                <option value="diamond">Diamond</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="voertuig">Voertuig (merk &amp; model)</label>
+                <input type="text" id="voertuig" name="voertuig" placeholder="bv. BMW 3-reeks" />
+              </div>
+              <div class="form-group">
+                <label for="datum">Gewenste datum</label>
+                <input type="date" id="datum" name="datum" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bericht">Bericht</label>
+              <textarea id="bericht" name="bericht" placeholder="Vertel ons meer over uw wagen en wensen…"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn--primary">
+                Verstuur aanvraag
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <div class="map-section">
+      <div class="container" style="margin-bottom:1.5rem">
+        <span class="label">Locatie</span>
+        <h3 class="h-section" style="font-size:clamp(1.4rem,3vw,2.2rem)">Vind ons</h3>
+      </div>
+      <iframe
+      src="https://www.google.com/maps?q=51.0281,4.4803&z=13&output=embed" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Locatie Need For Car Detailing"
+      ></iframe>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">NEEDFOR<span>CAR</span>DETAILING</div>
+        <div class="footer__tagline">Premium Auto Detailing</div>
+        <p class="footer__desc">Professionele autodetailing met oog voor elk detail. Uw wagen, onze passie.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigatie</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pakketten.html">Pakketten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Pakketten</div>
+        <ul class="footer__links">
+          <li><a href="pakketten.html#basic">Basic</a></li>
+          <li><a href="pakketten.html#refresh">Refresh</a></li>
+          <li><a href="pakketten.html#diamond">Diamond</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 NeedForCarDetailing. Alle rechten voorbehouden.</span>
+      <span>Gemaakt met precisie &amp; passie</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Drawer ──────────────────────────────────────────────
+    const toggle  = document.getElementById('navToggle');
+    const drawer  = document.getElementById('navDrawer');
+    const overlay = document.getElementById('navOverlay');
+    const openMenu  = () => { toggle.classList.add('open'); drawer.classList.add('open'); overlay.classList.add('open'); document.body.classList.add('nav-open'); toggle.setAttribute('aria-expanded','true'); };
+    const closeMenu = () => { toggle.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.classList.remove('nav-open'); toggle.setAttribute('aria-expanded','false'); };
+    toggle.addEventListener('click', () => drawer.classList.contains('open') ? closeMenu() : openMenu());
+    overlay.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key==='Escape') closeMenu(); });
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+    // ── Scroll animations ──────────────────────────────────
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-animate]').forEach(el => obs.observe(el));
+
+    // ── Pre-select pakket from URL ──────────────────────────
+    const pkg = new URLSearchParams(window.location.search).get('pakket');
+    if (pkg) {
+      const sel = document.getElementById('pakket');
+      if (sel) for (const opt of sel.options) { if (opt.value === pkg) { opt.selected = true; break; } }
+    }
+
+    // ── Date input min = today ──────────────────────────────
+    const dateInput = document.getElementById('datum');
+    if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+
+    // ── Form submit → open mail app ─────────────────────────
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const naam     = document.getElementById('naam').value.trim();
+      const email    = document.getElementById('email').value.trim();
+
+      if (!naam || !email) {
+        alert('Gelieve minimaal uw naam en e-mailadres in te vullen.');
+        return;
+      }
+
+      const telefoon = document.getElementById('telefoon').value.trim();
+      const pakket   = document.getElementById('pakket').value;
+      const voertuig = document.getElementById('voertuig').value.trim();
+      const datum    = document.getElementById('datum').value;
+      const bericht  = document.getElementById('bericht').value.trim();
+
+      const subject = encodeURIComponent('Afspraak aanvraag – Need For Car Detailing');
+
+      const body = encodeURIComponent(
+        `Naam: ${naam}\n` +
+        `E-mail: ${email}\n` +
+        `Telefoon: ${telefoon || '–'}\n` +
+        `Pakket: ${pakket || '–'}\n` +
+        `Voertuig: ${voertuig || '–'}\n` +
+        `Gewenste datum: ${datum || '–'}\n\n` +
+        `Bericht:\n${bericht || '–'}`
+      );
+
+      window.location.href = `mailto:yassine.b2007@hotmail.com?subject=${subject}&body=${body}`;
+
+      // Toon succesmelding
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

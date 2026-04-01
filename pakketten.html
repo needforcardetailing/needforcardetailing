@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakketten - NFCD</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ══ NAVIGATIE ══ -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">NEEDFOR<span>CAR</span>DETAILING</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pakketten.html" class="active">Pakketten</a></li>
+      <li><a href="contact.html" class="nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav__overlay" id="navOverlay"></div>
+  <nav class="nav__drawer" id="navDrawer" aria-label="Mobiel menu">
+    <a href="index.html" class="nav__drawer-link">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="pakketten.html" class="nav__drawer-link active">Pakketten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="contact.html" class="nav__drawer-link">Contact <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="nav__drawer-info">
+      <div class="nav__drawer-info-label">Telefoon</div>
+      <a href="tel:+32400000000">+32 400 00 00 00</a>
+      <div class="nav__drawer-info-label">E-mail</div>
+      <a href="mailto:info@needforcardetailing.be">info@needforcardetailing.be</a>
+      <div class="nav__drawer-info-label">Openingsuren</div>
+      <p>Ma–Vr: 8:00 – 18:00 &nbsp;·&nbsp; Za: 9:00 – 16:00</p>
+    </div>
+    <div class="nav__drawer-social">
+      <a href="https://www.instagram.com/needforcardetailing/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.tiktok.com/@needforcardetailing?lang=nl-NL" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg></a>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <div class="page-hero">
+      <span class="label" data-animate>Onze diensten</span>
+      <h1 class="h-display" data-animate data-delay="1">Pakketten</h1>
+      <p class="h-serif" data-animate data-delay="2">Drie niveaus van perfectie — voor elk voertuig de juiste aanpak.</p>
+    </div>
+
+    <!-- ══════════════════════════════════
+         PAKKET 01 — BASIC
+    ══════════════════════════════════ -->
+    <section class="package" id="basic">
+      <div class="package__inner container">
+
+        <div data-animate>
+          <div class="slideshow" id="ss-basic">
+
+            <div class="slideshow__slide active">
+              <img src="images/basic1.png" alt="Basic — handwas" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/basic2.png" alt="Basic — velgen" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/basic3.png" alt="Basic — exterieur" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/basic4.png" alt="Basic — ruiten" />
+            </div>
+
+
+            <button class="slideshow__arrow slideshow__arrow--prev" data-target="ss-basic" aria-label="Vorige">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="slideshow__arrow slideshow__arrow--next" data-target="ss-basic" aria-label="Volgende">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="slideshow__counter" id="ss-basic-counter">1 / 5</div>
+            <div class="slideshow__controls" id="ss-basic-dots">
+              <button class="slideshow__dot active" data-index="0" data-target="ss-basic"></button>
+              <button class="slideshow__dot" data-index="1" data-target="ss-basic"></button>
+              <button class="slideshow__dot" data-index="2" data-target="ss-basic"></button>
+              <button class="slideshow__dot" data-index="3" data-target="ss-basic"></button>
+              <button class="slideshow__dot" data-index="4" data-target="ss-basic"></button>
+            </div>
+          </div>
+        </div>
+
+        <div data-animate data-delay="2">
+          <div class="package__badge">Pakket 01</div>
+          <h2 class="package__name">Basic</h2>
+          <p class="package__tagline">De perfecte start — snel en grondig.</p>
+          <div class="divider"></div>
+          <div class="package__price">
+            <span class="package__price-from">Vanaf</span>
+            <span class="package__price-amount">€ 30</span>
+          </div>
+          <ul class="package__includes">
+            <li>Handwas exterieur (2-bucket methode)</li>
+            <li>Velgen en banden reinigen</li>
+            <li>Ruiten en spiegels poetsen</li>
+            <li>Interieur stofzuigen</li>
+            <li>Dashboard en console afnemen</li>
+            <li>Matten reinigen</li>
+          </ul>
+          <a href="contact.html?pakket=basic" class="btn btn--outline">
+            Dit pakket boeken
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PAKKET 02 — REFRESH
+    ══════════════════════════════════ -->
+    <section class="package" id="refresh">
+      <div class="package__inner package__inner--reverse container">
+
+        <div data-animate data-delay="2">
+          <div class="package__badge">Pakket 02</div>
+          <h2 class="package__name">Refresh</h2>
+          <p class="package__tagline">Nieuw leven voor uw wagen — van buiten én van binnen.</p>
+          <div class="divider"></div>
+          <div class="package__price">
+            <span class="package__price-from">Vanaf</span>
+            <span class="package__price-amount">€ 90</span>
+          </div>
+          <ul class="package__includes">
+            <li>Alles uit het Basic pakket</li>
+            <li>Diepte reiniging van de zetels</li>
+            <li>Diepte reiniging van de matten</li>
+            <li>Diepte reiniging van de vloer</li>
+            <li>Alcantara behandeling</li>
+            <li>Leder behandeling</li>
+            <li>Interieur stoomreiniging</li>
+            <li>Raambehandeling hydrofobe coating</li>
+            <li>Geurbehandeling</li>
+          </ul>
+          <a href="contact.html?pakket=refresh" class="btn btn--outline">
+            Dit pakket boeken
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div data-animate>
+          <div class="slideshow" id="ss-refresh">
+            <div class="slideshow__slide active">
+              <img src="images/refresh1.png" alt="Refresh — foam" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/truckstuur.png" alt="Refresh — interieur" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/refresh3.png" alt="Refresh — lak" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/refresh4.png" alt="Refresh — wax" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/refresh5.png" alt="Refresh — wax" />
+            </div>
+
+            <button class="slideshow__arrow slideshow__arrow--prev" data-target="ss-refresh" aria-label="Vorige">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="slideshow__arrow slideshow__arrow--next" data-target="ss-refresh" aria-label="Volgende">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="slideshow__counter" id="ss-refresh-counter">1 / 5</div>
+            <div class="slideshow__controls">
+              <button class="slideshow__dot active" data-index="0" data-target="ss-refresh"></button>
+              <button class="slideshow__dot" data-index="1" data-target="ss-refresh"></button>
+              <button class="slideshow__dot" data-index="2" data-target="ss-refresh"></button>
+              <button class="slideshow__dot" data-index="3" data-target="ss-refresh"></button>
+              <button class="slideshow__dot" data-index="4" data-target="ss-refresh"></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PAKKET 03 — DIAMOND
+    ══════════════════════════════════ -->
+    <section class="package package--diamond" id="diamond">
+      <div class="package__inner container">
+
+        <div data-animate>
+          <div class="slideshow" id="ss-diamond">
+            <div class="slideshow__slide active">
+              <img src="images/diamond1.png" alt="Diamond — coating" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/diamond2.png" alt="Diamond — polijsten" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/diamond3.png" alt="Diamond — scratch correctie" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/diamond4.png" alt="Diamond — eindresultaat" />
+            </div>
+            <div class="slideshow__slide">
+              <img src="images/diamond5.png" alt="Diamond — eindresultaat" />
+            </div>
+        
+
+            <button class="slideshow__arrow slideshow__arrow--prev" data-target="ss-diamond" aria-label="Vorige">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="slideshow__arrow slideshow__arrow--next" data-target="ss-diamond" aria-label="Volgende">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="slideshow__counter" id="ss-diamond-counter">1 / 5</div>
+            <div class="slideshow__controls">
+              <button class="slideshow__dot active" data-index="0" data-target="ss-diamond"></button>
+              <button class="slideshow__dot" data-index="1" data-target="ss-diamond"></button>
+              <button class="slideshow__dot" data-index="2" data-target="ss-diamond"></button>
+              <button class="slideshow__dot" data-index="3" data-target="ss-diamond"></button>
+              <button class="slideshow__dot" data-index="4" data-target="ss-diamond"></button>
+            </div>
+          </div>
+        </div>
+
+        <div data-animate data-delay="2">
+          <div class="package__badge">Pakket 03 — Exclusief</div>
+          <h2 class="package__name">Diamond</h2>
+          <p class="package__tagline">Het absolute maximum — showroom perfectie.</p>
+          <div class="divider"></div>
+          <div class="package__price">
+            <span class="package__price-from">Vanaf</span>
+            <span class="package__price-amount">€ 130</span>
+          </div>
+          <ul class="package__includes">
+            <li>Alles uit het Refresh pakket</li>
+            <li>Exterieur reiniging</li>
+            <li>Coating</li>
+            <li>Velgen reiniging</li>
+            <li>Motorruimte reiniging &amp; dressing</li>
+            <li>Wiel reiniging</li>
+          </ul>
+          <a href="contact.html?pakket=diamond" class="btn btn--accent">
+            Dit pakket boeken
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-banner__bg"></div>
+      <div class="cta-banner__inner" data-animate>
+        <h2 class="cta-banner__title">Twijfel je nog?</h2>
+        <p class="cta-banner__sub">Contacteer ons voor een persoonlijk advies op maat van uw wagen.</p>
+        <a href="contact.html" class="btn btn--accent">
+          Vrijblijvend contact
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">NEEDFOR<span>CAR</span>DETAILING</div>
+        <div class="footer__tagline">Premium Auto Detailing</div>
+        <p class="footer__desc">Professionele autodetailing met oog voor elk detail. Uw wagen, onze passie.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigatie</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pakketten.html">Pakketten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Pakketten</div>
+        <ul class="footer__links">
+          <li><a href="#basic">Basic</a></li>
+          <li><a href="#refresh">Refresh</a></li>
+          <li><a href="#diamond">Diamond</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 NeedForCarDetailing. Alle rechten voorbehouden.</span>
+      <span>Gemaakt met precisie &amp; passie</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Drawer ──────────────────────────────────────────────
+    const toggle  = document.getElementById('navToggle');
+    const drawer  = document.getElementById('navDrawer');
+    const overlay = document.getElementById('navOverlay');
+    const openMenu  = () => { toggle.classList.add('open'); drawer.classList.add('open'); overlay.classList.add('open'); document.body.classList.add('nav-open'); toggle.setAttribute('aria-expanded','true'); };
+    const closeMenu = () => { toggle.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.classList.remove('nav-open'); toggle.setAttribute('aria-expanded','false'); };
+    toggle.addEventListener('click', () => drawer.classList.contains('open') ? closeMenu() : openMenu());
+    overlay.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key==='Escape') closeMenu(); });
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+    // ── Scroll animations ──────────────────────────────────
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-animate]').forEach(el => obs.observe(el));
+
+    // ── Slideshow engine ───────────────────────────────────
+    function initSlideshow(id) {
+      const box    = document.getElementById(id);
+      if (!box) return;
+      const slides = box.querySelectorAll('.slideshow__slide');
+      const dots   = box.querySelectorAll('.slideshow__dot');
+      const counter= document.getElementById(id + '-counter');
+      let cur = 0, timer;
+
+      function goTo(i) {
+        slides[cur].classList.remove('active');
+        dots[cur].classList.remove('active');
+        cur = (i + slides.length) % slides.length;
+        slides[cur].classList.add('active');
+        if (dots[cur]) dots[cur].classList.add('active');
+        if (counter) counter.textContent = (cur+1) + ' / ' + slides.length;
+      }
+      function startAuto() { clearInterval(timer); timer = setInterval(() => goTo(cur+1), 4500); }
+
+      box.querySelectorAll('.slideshow__arrow--prev').forEach(b => b.addEventListener('click', () => { goTo(cur-1); startAuto(); }));
+      box.querySelectorAll('.slideshow__arrow--next').forEach(b => b.addEventListener('click', () => { goTo(cur+1); startAuto(); }));
+      dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); startAuto(); }));
+
+      // Swipe support
+      let startX = 0;
+      box.addEventListener('touchstart', e => { startX = e.changedTouches[0].clientX; }, { passive: true });
+      box.addEventListener('touchend',   e => {
+        const dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 40) { goTo(dx < 0 ? cur+1 : cur-1); startAuto(); }
+      });
+
+      startAuto();
+    }
+
+    initSlideshow('ss-basic');
+    initSlideshow('ss-refresh');
+    initSlideshow('ss-diamond');
+
+    // ── URL pakket pre-select ──────────────────────────────
+    const pkg = new URLSearchParams(window.location.search).get('pakket');
+    if (pkg) {
+      const target = document.getElementById(pkg);
+      if (target) setTimeout(() => target.scrollIntoView({ behavior:'smooth', block:'start' }), 300);
+    }
+  </script>
+
+</body>
+</html>
